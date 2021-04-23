@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "address": "1212 Valley of Death",
+        "planet": "Jupiter",
+        "description": "none",
+        "price": 900090,
+        "photo": "277667"
+    },
+    {
+        "id": 1,
+        "address": "1212 Valley of Dirt",
+        "planet": "Uranus",
+        "description": "lol no description needed here",
+        "price": 90009012,
+        "photo": "277668"
+    }    
+]
