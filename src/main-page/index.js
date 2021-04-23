@@ -4,6 +4,8 @@ import './main-page.css';
 import Header from './header';
 
 class App extends Component {
+  state = {}
+
   fetchHouses = () => {
     fetch('/houses.json')
       .then(rsp => rsp.json())
@@ -36,3 +38,7 @@ export default App;
 // as a rule of thumb:
 // if you want to just render some JSX, then use function components
 // use class components for everything else 
+// State -> private data for the component, pass props, NOT state.
+// Calling setState() triggers re-render
+// State is used in render(), if you arent going to render it, then dont 
+// use state.
