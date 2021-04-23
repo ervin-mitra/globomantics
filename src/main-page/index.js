@@ -6,6 +6,10 @@ import Header from './header';
 class App extends Component {
   state = {}
 
+  componentDidMount() {
+    this.fetchHouses();
+  }
+
   fetchHouses = () => {
     fetch('/houses.json')
       .then(rsp => rsp.json())
@@ -34,6 +38,7 @@ class App extends Component {
 
 export default App;
 
+//---------STATE------------------------------------------------------------
 // class component supports state and lifecycle methods
 // as a rule of thumb:
 // if you want to just render some JSX, then use function components
@@ -42,3 +47,7 @@ export default App;
 // Calling setState() triggers re-render
 // State is used in render(), if you arent going to render it, then dont 
 // use state.
+//--------------------------------------------------------------------------
+//-----------Lifecycle Methods----------------------------------------------
+// Called by react when a lifecycle status of a component changes.
+//--------------------------------------------------------------------------
