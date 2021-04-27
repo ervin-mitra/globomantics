@@ -14,5 +14,13 @@
         "description": "lol no description needed here",
         "price": 90009012,
         "photo": "277668"
+    },
+    {
+        "id": 2,
+        "address": "1111 Brown Valley",
+        "planet": "Uranus",
+        "description": "Come see for yourself",
+        "price": 900090122,
+        "photo": "277669"
     }    
 ]

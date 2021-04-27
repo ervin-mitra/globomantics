@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './main-page.css';
 import Header from './header';
+import FeaturedHouse from './featured-house';
 
 class App extends Component {
   state = {}
@@ -31,6 +32,7 @@ class App extends Component {
     return (
       <div className="container">
         <Header subtitle="Providing Houses All Over The Milky Way"/>
+        <FeaturedHouse house={this.state.featuredHouse} />
       </div>
     );
   }
@@ -51,3 +53,9 @@ export default App;
 //-----------Lifecycle Methods----------------------------------------------
 // Called by react when a lifecycle status of a component changes.
 //--------------------------------------------------------------------------
+
+/**
+ * React keyboard shortcuts on VSC
+ * 'imrc' import React , Component statement
+ * 'cc + TAB' creates the class componenet template(scaffold)
+ */
