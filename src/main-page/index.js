@@ -51,3 +51,9 @@ export default App;
 //-----------Lifecycle Methods----------------------------------------------
 // Called by react when a lifecycle status of a component changes.
 //--------------------------------------------------------------------------
+
+/**
+ * React keyboard shortcuts on VSC
+ * 'imrc' import React , Component statement
+ * 'cc + TAB' creates the class componenet template(scaffold)
+ */
