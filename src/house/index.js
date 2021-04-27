@@ -15,7 +15,7 @@ class House extends Component {
                 </div>
                 <div className="row">
                     <div className="col-md-7">
-                        <img src={} alt="House"/>
+                        IMAGE WOULD HAVE BEEN HERE LOL
                     </div>
                 </div>
                 <div className="col-md-5">
@@ -27,4 +27,4 @@ class House extends Component {
     }
 }
  
-export default House;
+export default House; 
