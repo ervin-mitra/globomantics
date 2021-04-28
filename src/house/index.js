@@ -4,7 +4,7 @@ import './house.css';
 class House extends Component {
     state = { }
     render() { 
-        const house = this.props.house
+        const house = this.props.house // As you can see, props can be derived as such when its a class component
         return ( 
             <div>
                 <div className="row mt-2">
