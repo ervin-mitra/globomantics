@@ -17,6 +17,7 @@ class App extends Component {
       .then(allHouses => {
         this.allHouses = allHouses;
         this.determineFeaturedHouse();
+        this.determineUniquePlanets();
       })
   }
 
@@ -26,6 +27,14 @@ class App extends Component {
       const featuredHouse = this.allHouses[randomIndex];
       this.setState({ featuredHouse });
     }
+  }
+
+  determineUniquePlanets = () => {
+    const planets = this.allHouses
+      ? Array.from(new Set(this.allHouses.map(h => h.planet)))
+      : [];
+    planets.unshift(null); // add null to the beginning of an array, so that the first choice is blank
+    this.setState({ planets });
   }
 
   render() {

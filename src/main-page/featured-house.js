@@ -1,6 +1,7 @@
 import React from 'react';
 import House from '../house';
 
+// non class components must have props passed as an arg.
 const FeaturedHouse = (props) => {
     if (props.house) return (
         <div>
